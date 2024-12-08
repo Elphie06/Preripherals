@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+   <!-- font -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- css -->
+   <link rel="stylesheet" href="productstyle.css">
+
+   <!-- js -->
+   <script src="productscript.js" defer></script>
+
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products - Mouse</title>
+<body>
+	<div class="sidebar">
+		<div class="logo-details">
+			<div class="logo_name">Products</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav-list">
+			<!-- <li>
+				<input type="text" placeholder="Search...">
+				<span class="tooltip">Search</span>
+			</li> -->
+			<li>
+				<a href="accountProductList.html">
+					<i class='bx bx-user'></i>
+					<span class="links_name">Keyboard</span>
+				</a>
+				<span class="tooltip">Keyboard</span>
+			</li>
+			<li>
+				<a href="accountProductMouse.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Mouse</span>
+				</a>
+				<span class="tooltip">Mouse</span>
+			</li>
+            <li>
+				<a href="accountProductGamingChair.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Gaming Chair</span>
+				</a>
+				<span class="tooltip">Gaming Chair</span>
+			</li>
+            <li>
+				<a href="accountProductHeadphone.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Headphone</span>
+				</a>
+				<span class="tooltip">Headphone</span>
+			</li>
+            <li>
+				<a href="accountProductMicrophone.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Microphone</span>
+				</a>
+				<span class="tooltip">Microphone</span>
+			</li>
+            <li>
+				<a href="accountProductSpeaker.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Speaker</span>
+				</a>
+				<span class="tooltip">Speaker</span>
+			</li>
+            <li>
+				<a href="accountProductWebcam.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Webcam</span>
+				</a>
+				<span class="tooltip">Webcam</span>
+			</li>
+            <li>
+				<a href="accountProductMonitor.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Monitor</span>
+				</a>
+				<span class="tooltip">Monitor</span>
+			</li>
+			<li>
+				<a href="Account_Landing.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Home</span>
+				</a>
+				<span class="tooltip">Home</span>
+			</li>
+			<li>
+				<a href="cart.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Cart</span>
+				</a>
+				<span class="tooltip">Cart</span>
+			</li>
+			<!-- <li>
+				<a href="#" id="order-link">
+					<i class='bx bx-cart-alt'></i>
+					<span class="links_name">Home</span>
+				</a>
+				<span class="tooltip">Home</span>
+				<ul class="order-options" style="display: none;">
+					<li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li>
+					<li>
+						<label>
+							Option 2
+							<input type="checkbox" class="checkbox-option" data-text="Option 2 selected">
+						</label>
+					</li>
+					<li>
+						<label>
+							Option 3
+							<input type="checkbox" class="checkbox-option" data-text="Option 3 selected">
+						</label>
+					</li>
+                    <li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li>
+                    <li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li> -->
+				</ul>
+			</li>
+			<!-- <li>
+				<a href="#">
+					<i class='bx bx-cog'></i>
+					<span class="links_name">Settings</span>
+				</a>
+				<span class="tooltip">Settings</span>
+			</li> -->
+			<!-- <li class="profile">
+				<div class="profile-details">
+					<div class="name_job">
+						<div class="name">Logout</div>
+					</div>
+					<i class='bx bx-log-out' id="log_out"></i>
+				</div>
+			</li> -->
+		</ul>
+	</div>
+	<div class="container">
+
+		<h3 class="title">Mouse</h3>
+	 
+		<div class="products-container">
+	 
+		   <div class="product" data-name="p-1">
+			  <img src="media/mouse-1.png" alt="">
+			  <h3>Corsair HARPOON RGB Wireless Gaming Mouse</h3>
+			  <div class="price">₱1,300</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-2">
+			  <img src="media/mouse-2.png" alt="">
+			  <h3>Fantech WG-12R Raigor III Black Wireless Gaming Mouse</h3>
+			  <div class="price">₱1,100</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-3">
+			  <img src="media/mouse-3.png" alt="">
+			  <h3>ASUS TUF Gaming M3 Gen</h3>
+			  <div class="price">₱1,400</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-4">
+			  <img src="media/mouse-4.png" alt="">
+			  <h3>EASE EGM110 Gaming Mouse</h3>
+			  <div class="price">₱1,000</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-5">
+			  <img src="media/mouse-5.png" alt="">
+			  <h3>HP M160 Gaming Mouse</h3>
+			  <div class="price">₱1,300</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-6">
+			  <img src="media/mouse-6.png" alt="">
+			  <h3>A4Tech OP-620D 2X Click Optical Mouse</h3>
+			  <div class="price">₱400</div>
+		   </div>
+
+           <div class="product" data-name="p-7">
+            <img src="media/mouse-7.png" alt="">
+            <h3>Philips M344 Wireless Mouse Black</h3>
+            <div class="price">₱700</div>
+         </div>
+
+         <div class="product" data-name="p-8">
+            <img src="media/mouse-8.png" alt="">
+            <h3>Sandberg USB Wired Office Mouse</h3>
+            <div class="price">₱600</div>
+         </div>
+
+         <div class="product" data-name="p-9">
+            <img src="media/mouse-9.png" alt="">
+            <h3>Silent Wired Mouse</h3>
+            <div class="price">₱650</div>
+         </div>
+         
+         <div class="product" data-name="p-10">
+            <img src="media/mouse-10.png" alt="">
+            <h3>AULA AM201 Wireless Office Mouse</h3>
+            <div class="price">₱550</div>
+         </div>
+
+		</div>
+	 
+	 </div>
+	 
+	 <div class="products-preview">
+	 
+		<div class="preview" data-target="p-1">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-1.png" alt="">
+    <h3>Corsair HARPOON RGB Wireless Gaming Mouse</h3>
+    <p>Prog Buttons: 6<br>
+       Sensor Type: Optical<br>
+       CUE Software: Supported in iCUE<br>
+       Game Type: FPS; MOBA; Battle Royale</p>
+    <div class="price">₱1,300</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('Corsair HARPOON RGB Wireless Gaming Mouse', 1300, 'media/mouse-1.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-2">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-2.png" alt="">
+    <h3>Fantech WG-12R Raigor III Black Wireless Gaming Mouse</h3>
+    <p>2000DPI<br>
+       Six Buttons<br>
+       3 Million Clicks<br>
+       Chargeable Battery (Only WG12R)</p>
+    <div class="price">₱1,100</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('Fantech WG-12R Raigor III Black Wireless Gaming Mouse', 1100, 'media/mouse-2.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-3">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-3.png" alt="">
+    <h3>ASUS TUF Gaming M3 Gen</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+    <div class="price">₱1,400</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('ASUS TUF Gaming M3 Gen', 1400, 'media/mouse-3.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-4">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-4.png" alt="">
+    <h3>EASE EGM110 Gaming Mouse</h3>
+    <p>Number of product keys: 8D<br>
+       Product size: <br>
+       Chip: 825F (Driver Support)<br>
+       Rate of return: 1000HZ<br>
+       DPI: 800 - 1600 - 2400 - 3200 - 4800 - 12000</p>
+    <div class="price">₱1,000</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('EASE EGM110 Gaming Mouse', 1000, 'media/mouse-4.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-5">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-5.png" alt="">
+    <h3>HP M160 Gaming Mouse</h3>
+    <p>Stable optical sensor for precise tracking<br>
+       Ergonomic design for lasting comfort<br>
+       Built-in LED lighting.<br>
+       Compatible with Microsoft Windows XP/ Windows 7/ Windows 8/ Windows 10</p>
+    <div class="price">₱1,300</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('HP M160 Gaming Mouse', 1300, 'media/mouse-5.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-6">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-6.png" alt="">
+    <h3>A4Tech OP-620D 2X Click Optical Mouse</h3>
+    <p>Plug Type: USB<br>
+       Power Consumption: 1-500<br>
+       Input Voltage: 100-240 V<br>
+       Condition: New<br>
+       Mice Features: USB</p>
+    <div class="price">₱400</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('A4Tech OP-620D 2X Click Optical Mouse', 400, 'media/mouse-6.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-7">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-7.png" alt="">
+    <h3>Philips M344 Wireless Mouse Black</h3>
+    <p>Wireless mouse with an ergonomic design<br>
+       Connection: 2.4GHz wireless connection; effective wireless distance of 10 meters<br>
+       Button: 3<br>
+       Sensor: Optical<br>
+       Accurate photoelectric sensor: 1000 dpi</p>
+    <div class="price">₱700</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('Philips M344 Wireless Mouse Black', 700, 'media/mouse-7.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-8">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-8.png" alt="">
+    <h3>Sandberg USB Wired Office Mouse</h3>
+    <p>5 buttons<br>
+       Optical 1000/1200/1600 DPI<br>
+       Scroll wheel<br>
+       USB cable 1.55 meters</p>
+    <div class="price">₱600</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('Sandberg USB Wired Office Mouse', 600, 'media/mouse-8.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-9">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-9.png" alt="">
+    <h3>Silent Wired Mouse</h3>
+    <p>Refillable: No<br>
+       Silent<br>
+       Adjustable DPI: Yes<br>
+       USB type: USB-A & USB-C</p>
+    <div class="price">₱650</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('Silent Wired Mouse', 650, 'media/mouse-9.png')">Add to Cart</a>
+    </div>
+</div>
+
+<div class="preview" data-target="p-10">
+    <i class="fas fa-times"></i>
+    <img src="media/mouse-10.png" alt="">
+    <h3>AULA AM201 Wireless Office Mouse</h3>
+    <p>2.4GHz Wireless Mouse<br>
+       Ergonomic Design<br>
+       3 Keys<br>
+       1200 DPI<br>
+       Wireless Distance: 10M<br>
+       Rated Voltage: DC 1.5V 13mA</p>
+    <div class="price">₱550</div>
+    <div class="buttons">
+        <a href="#" class="cart" onclick="addToCart('AULA AM201 Wireless Office Mouse', 550, 'media/mouse-10.png')">Add to Cart</a>
+    </div>
+</div>
+
+         </div>
+
+
+         <script>
+            let sidebar = document.querySelector(".sidebar");
+            let closeBtn = document.querySelector("#btn");
+            let orderLink = document.getElementById("order-link");
+            let orderOptions = document.querySelector(".order-options");
+    
+            closeBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("open");
+                menuBtnChange();
+            });
+    
+            orderLink.addEventListener("click", (event) => {
+                event.preventDefault(); 
+                orderOptions.style.display = orderOptions.style.display === "none" ? "block" : "none";
+            });
+    
+            function menuBtnChange() {
+                if (sidebar.classList.contains("open")) {
+                    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+                } else {
+                    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+                }
+            }
+    
+            const checkboxes = document.querySelectorAll('.checkbox-option');
+    
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    const text = checkbox.dataset.text;
+                    if (checkbox.checked) {
+                        console.log(text + " checked");
+                    } else {
+                        console.log(text + " unchecked");
+                    }
+                });
+            });
+            //
+            function addToCart(productName, price, image) {
+        const product = {
+            name: productName,
+            price: price,
+            image: image
+        };
+    
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        const existingProductIndex = cart.findIndex(item => item.name === product.name);
+    
+        if (existingProductIndex > -1) {
+
+            cart[existingProductIndex].quantity += 1; 
+        } else {
+    
+            product.quantity = 1; 
+            cart.push(product);
+        }
+    
+     
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+    
+        alert(`${product.name} has been added to your cart.`);
+    }
+    </script>
+</body>
+</html>
