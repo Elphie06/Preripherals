@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+   <!-- font -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- css -->
+   <link rel="stylesheet" href="productstyle.css">
+
+   <!-- js -->
+   <script src="productscript.js" defer></script>
+
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products - Headphone</title>
+<body>
+	<div class="sidebar">
+		<div class="logo-details">
+			<div class="logo_name">Products</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav-list">
+			<!-- <li>
+				<input type="text" placeholder="Search...">
+				<span class="tooltip">Search</span>
+			</li> -->
+			<li>
+				<a href="productList.html">
+					<i class='bx bx-user'></i>
+					<span class="links_name">Keyboard</span>
+				</a>
+				<span class="tooltip">Keyboard</span>
+			</li>
+			<li>
+				<a href="productMouse.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Mouse</span>
+				</a>
+				<span class="tooltip">Mouse</span>
+			</li>
+            <li>
+				<a href="productGamingchair.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Gaming Chair</span>
+				</a>
+				<span class="tooltip">Gaming Chair</span>
+			</li>
+            <li>
+				<a href="productHeadphone.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Headphone</span>
+				</a>
+				<span class="tooltip">Headphone</span>
+			</li>
+            <li>
+				<a href="productMicrophone.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Microphone</span>
+				</a>
+				<span class="tooltip">Microphone</span>
+			</li>
+            <li>
+				<a href="productSpeaker.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Speaker</span>
+				</a>
+				<span class="tooltip">Speaker</span>
+			</li>
+            <li>
+				<a href="productWebcam.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Webcam</span>
+				</a>
+				<span class="tooltip">Webcam</span>
+			</li>
+            <li>
+				<a href="productMonitor.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Monitor</span>
+				</a>
+				<span class="tooltip">Monitor</span>
+			</li>
+			<li>
+				<a href="Landing.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Home</span>
+				</a>
+				<span class="tooltip">Home</span>
+			</li>
+			<!-- <li>
+				<a href="#" id="order-link">
+					<i class='bx bx-cart-alt'></i>
+					<span class="links_name">Home</span>
+				</a>
+				<span class="tooltip">Home</span>
+				<ul class="order-options" style="display: none;">
+					<li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li>
+					<li>
+						<label>
+							Option 2
+							<input type="checkbox" class="checkbox-option" data-text="Option 2 selected">
+						</label>
+					</li>
+					<li>
+						<label>
+							Option 3
+							<input type="checkbox" class="checkbox-option" data-text="Option 3 selected">
+						</label>
+					</li>
+                    <li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li>
+                    <li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li> -->
+				</ul>
+			</li>
+			<!-- <li>
+				<a href="#">
+					<i class='bx bx-cog'></i>
+					<span class="links_name">Settings</span>
+				</a>
+				<span class="tooltip">Settings</span>
+			</li> -->
+			<!-- <li class="profile">
+				<div class="profile-details">
+					<div class="name_job">
+						<div class="name">Logout</div>
+					</div>
+					<i class='bx bx-log-out' id="log_out"></i>
+				</div>
+			</li> -->
+		</ul>
+	</div>
+	<div class="container">
+
+		<h3 class="title"> Headphone </h3>
+	 
+		<div class="products-container">
+	 
+		   <div class="product" data-name="p-1">
+			  <img src="media/headphone-1.png" alt="">
+			  <h3>JBL Gaming Headphone </h3>
+			  <div class="price">₱1,100</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-2">
+			  <img src="media/headphone-2.png" alt="">
+			  <h3>HyperX Cloud III Wireless Gaming</h3>
+			  <div class="price">₱1,200</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-3">
+			  <img src="media/headphone-3.png" alt="">
+			  <h3>Logitech G733 Lightweight Wireless RGB Gaming Headset</h3>
+			  <div class="price">₱1,300</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-4">
+			  <img src="media/headphone-4.png" alt="">
+			  <h3>Aula F-606 Gaming Headset RGB Black</h3>
+			  <div class="price">₱1,400</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-5">
+			  <img src="media/headphone-5.png" alt="">
+			  <h3>Cosmic Byte G2050 7.1 USB Gaming Headset </h3>
+			  <div class="price">₱1,500</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-6">
+			  <img src="media/headphone-6.png" alt="">
+			  <h3>RGB LED Gaming Headset with Noise Cancelling Mic</h3>
+			  <div class="price">₱1,600</div>
+		   </div>
+
+           <div class="product" data-name="p-7">
+            <img src="media/headphone-7.png" alt="">
+            <h3>Onikuma K9 Cat Ear Gaming Headset 7.1 Surround Sound</h3>
+            <div class="price">₱1,700</div>
+         </div>
+
+         <div class="product" data-name="p-8">
+            <img src="media/headphone-8.png" alt="">
+            <h3>BENGOO G9000 Stereo Pro Gaming Headset</h3>
+            <div class="price">₱1,800</div>
+         </div>
+
+         <div class="product" data-name="p-9">
+            <img src="media/headphone-9.png" alt="">
+            <h3>MSI DS501 GAMING HEADSET</h3>
+            <div class="price">₱1,900</div>
+         </div>
+         
+         <div class="product" data-name="p-10">
+            <img src="media/headphone-10.png" alt="">
+            <h3>Stealth C6-100 LED Light-Up Multi-Format Gaming Headset</h3>
+            <div class="price">₱2,000</div>
+         </div>
+
+		</div>
+	 
+	 </div>
+	 
+	 <div class="products-preview">
+	 
+		<div class="preview" data-target="p-1">
+		   <i class="fas fa-times"></i>
+		   <img src="media/headphone-1.png" alt="">
+		   <h3>JBL Gaming Headphone</h3>
+		   <p>Driver sensitivity at 1kHz/1mW (dB)
+            98
+            Dynamic frequency response range (Hz)
+            20 Hz - 20 kHz
+            Impedance (ohms)
+            32
+            Passive Frequency Response
+            20 Hz – 20 kHz</p>
+		   <div class="price">₱1,100</div>
+		   <div class="buttons">
+			  <a href="#" class="buy">buy now</a>
+			  <a href="#" class="cart">add to cart</a>
+		   </div>
+		</div>
+	 
+		<div class="preview" data-target="p-2">
+		   <i class="fas fa-times"></i>
+		   <img src="media/headphone-2.png" alt="">
+		   <h3>HyperX Cloud III Wireless Gaming</h3>
+		   <p>Driver: Dynamic, 53mm with Neodymium magnets
+            Form Factor: Over ear, circumaural, closed back.
+            Frequency Response: 10Hz-21kHz
+            Sensitivity: 111.94 dBSPL/mW at 1 kHz.</p>
+		   <div class="price">₱1,200</div>
+		   <div class="buttons">
+			  <a href="#" class="buy">buy now</a>
+			  <a href="#" class="cart">add to cart</a>
+		   </div>
+		</div>
+	 
+		<div class="preview" data-target="p-3">
+		   <i class="fas fa-times"></i>
+		   <img src="media/headphone-3.png" alt="">
+		   <h3>Logitech G733 Lightweight Wireless RGB Gaming Headset</h3>
+		   <p>requency Response: 20 Hz - 20 kHz
+            Impedance: 39 Ohms (passive), 5k Ohms (active)
+            Sensitivity: 87.5 dB SPL/mW
+            Microphone (Boom)
+            Microphone Pickup Pattern: Cardioid (Unidirectional)</p>
+		   <div class="price">₱1,300</div>
+		   <div class="buttons">
+			  <a href="#" class="buy">buy now</a>
+			  <a href="#" class="cart">add to cart</a>
+		   </div>
+		</div>
+	 
+		<div class="preview" data-target="p-4">
+		   <i class="fas fa-times"></i>
+		   <img src="media/headphone-4.png" alt="">
+		   <h3>Aula F-606 Gaming Headset RGB Black</h3>
+		   <p>3.5mm Jack and USB
+            Skin-friendly earmuffs with excellent design for sound insulation
+            Comfortable and retractable headband
+            Lightweight and stylish
+            Durable cables resistant to constant pulling
+            Speaker diameter: Φ50mm</p>
+		   <div class="price">₱1,400</div>
+		   <div class="buttons">
+			  <a href="#" class="buy">buy now</a>
+			  <a href="#" class="cart">add to cart</a>
+		   </div>
+		</div>
+	 
+		<div class="preview" data-target="p-5">
+		   <i class="fas fa-times"></i>
+		   <img src="media/headphone-5.png" alt="">
+		   <h3>Cosmic Byte G2050 7.1 USB Gaming Headset</h3>
+		   <p>Driver Diameter: 50mm.
+            Impedence: 16Ω ± 15%
+            Sensitivity: 119.5 ± 3dB.
+            Frequency Range: 15Hz - 20KHz.
+            Microphone: 6.0 x 5.0mm.</p>
+		   <div class="price">₱1,500</div>
+		   <div class="buttons">
+			  <a href="#" class="buy">buy now</a>
+			  <a href="#" class="cart">add to cart</a>
+		   </div>
+		</div>
+	 
+		<div class="preview" data-target="p-6">
+		   <i class="fas fa-times"></i>
+		   <img src="media/headphone-6.png" alt="">
+		   <h3>RGB LED Gaming Headset with Noise Cancelling Mic</h3>
+		   <p>HIGH-QUALITY MATERIALS
+            HIGH COMPATIBILITY
+            COMFORTABLE FEELING 
+            PRACTICAL DESIGN
+            EASY INSTALL: Plug and play, 3.5mm plugs for mic and headset + USB plug for lights,</p>
+		   <div class="price">₱1,600</div>
+		   <div class="buttons">
+			  <a href="#" class="buy">buy now</a>
+			  <a href="#" class="cart">add to cart</a>
+		   </div>
+		</div>
+
+        <div class="preview" data-target="p-7">
+            <i class="fas fa-times"></i>
+            <img src="media/headphone-7.png" alt="">
+            <h3>Onikuma K9 Cat Ear Gaming Headset 7.1 Surround Sound</h3>
+            <p>7.1 Surround Sound - Enjoy an immersive surround sound experience
+                Removable Cat Ears
+                100% Memory Foam Ear Pads
+                360° Rotating And Retractable Microphone</p>
+            <div class="price">₱1,700</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+               <a href="#" class="cart">add to cart</a>
+            </div>
+         </div>
+
+         <div class="preview" data-target="p-8">
+            <i class="fas fa-times"></i>
+            <img src="media/headphone-8.png" alt="">
+            <h3>BENGOO G9000 Stereo Pro Gaming Headset</h3>
+            <p>Control Type	Volume Control
+                Unit Count	1 Count
+                Item Weight	0.43 Kilograms
+                UPC	715668382954
+                Manufacturer	BENGOO
+                Age Range Description	Adult
+                Package Type	FFP</p>
+            <div class="price">₱1,800</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+               <a href="#" class="cart">add to cart</a>
+            </div>
+         </div>
+
+         <div class="preview" data-target="p-9">
+            <i class="fas fa-times"></i>
+            <img src="media/headphone-9.png" alt="">
+            <h3>MSI DS501 GAMING HEADSET</h3>
+            <p>Enhanced Virtual 7.1 Surround Sound
+                Intelligent Vibration System
+                Smart Audio Controller
+                Enhanced 40mm High Quality Drivers
+                Cool LED Light
+                </p>
+            <div class="price">₱1,900</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+               <a href="#" class="cart">add to cart</a>
+            </div>
+         </div>
+
+         <div class="preview" data-target="p-10">
+            <i class="fas fa-times"></i>
+            <img src="media/headphone-10.png" alt="">
+            <h3>Stealth C6-100 LED Light-Up Multi-Format Gaming Headset</h3>
+            <p>Multi-format, compatible with PS5, PS4, XBOX, Switch, PC and m
+                Stylish rechargeable light-up RGB LED headset
+                Quality audio speakers for immersive sound
+                Flexible mic for clean and clear chat
+                In-line audio controls for easy volume adjustment and chat mut</p>
+            <div class="price">₱2,000</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+               <a href="#" class="cart">add to cart</a>
+            </div>
+         </div>
+
+
+	<script>
+		let sidebar = document.querySelector(".sidebar");
+		let closeBtn = document.querySelector("#btn");
+		let orderLink = document.getElementById("order-link");
+		let orderOptions = document.querySelector(".order-options");
+
+		closeBtn.addEventListener("click", () => {
+			sidebar.classList.toggle("open");
+			menuBtnChange();
+		});
+
+		orderLink.addEventListener("click", (event) => {
+			event.preventDefault(); 
+			orderOptions.style.display = orderOptions.style.display === "none" ? "block" : "none";
+		});
+
+		function menuBtnChange() {
+			if (sidebar.classList.contains("open")) {
+				closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+			} else {
+				closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+			}
+		}
+
+		const checkboxes = document.querySelectorAll('.checkbox-option');
+
+		checkboxes.forEach(checkbox => {
+			checkbox.addEventListener('change', () => {
+				const text = checkbox.dataset.text;
+				if (checkbox.checked) {
+					console.log(text + " checked");
+				} else {
+					console.log(text + " unchecked");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+   <!-- font -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- css -->
+   <link rel="stylesheet" href="productstyle.css">
+
+   <!-- js -->
+   <script src="productscript.js" defer></script>
+
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products - Monitor</title>
+<body>
+	<div class="sidebar">
+		<div class="logo-details">
+			<div class="logo_name">Products</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav-list">
+			<!-- <li>
+				<input type="text" placeholder="Search...">
+				<span class="tooltip">Search</span>
+			</li> -->
+            <li>
+				<a href="accountProductList.html">
+					<i class='bx bx-user'></i>
+					<span class="links_name">Keyboard</span>
+				</a>
+				<span class="tooltip">Keyboard</span>
+			</li>
+			<li>
+				<a href="accountProductMouse.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Mouse</span>
+				</a>
+				<span class="tooltip">Mouse</span>
+			</li>
+            <li>
+				<a href="accountProductGamingChair.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Gaming Chair</span>
+				</a>
+				<span class="tooltip">Gaming Chair</span>
+			</li>
+            <li>
+				<a href="accountProductHeadphone.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Headphone</span>
+				</a>
+				<span class="tooltip">Headphone</span>
+			</li>
+            <li>
+				<a href="accountProductMicrophone.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Microphone</span>
+				</a>
+				<span class="tooltip">Microphone</span>
+			</li>
+            <li>
+				<a href="accountProductSpeaker.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Speaker</span>
+				</a>
+				<span class="tooltip">Speaker</span>
+			</li>
+            <li>
+				<a href="accountProductWebcam.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Webcam</span>
+				</a>
+				<span class="tooltip">Webcam</span>
+			</li>
+            <li>
+				<a href="accountProductMonitor.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Monitor</span>
+				</a>
+				<span class="tooltip">Monitor</span>
+			</li>
+			<li>
+				<a href="Account_Landing.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Home</span>
+				</a>
+				<span class="tooltip">Home</span>
+			</li>
+			<li>
+				<a href="cart.html">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Cart</span>
+				</a>
+				<span class="tooltip">Cart</span>
+			</li>
+			<!-- <li>
+				<a href="#" id="order-link">
+					<i class='bx bx-cart-alt'></i>
+					<span class="links_name">Home</span>
+				</a>
+				<span class="tooltip">Home</span>
+				<ul class="order-options" style="display: none;">
+					<li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li>
+					<li>
+						<label>
+							Option 2
+							<input type="checkbox" class="checkbox-option" data-text="Option 2 selected">
+						</label>
+					</li>
+					<li>
+						<label>
+							Option 3
+							<input type="checkbox" class="checkbox-option" data-text="Option 3 selected">
+						</label>
+					</li>
+                    <li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li>
+                    <li>
+						<label>
+							Option 1
+							<input type="checkbox" class="checkbox-option" data-text="Option 1 selected">
+						</label>
+					</li> -->
+				</ul>
+			</li>
+			<!-- <li>
+				<a href="#">
+					<i class='bx bx-cog'></i>
+					<span class="links_name">Settings</span>
+				</a>
+				<span class="tooltip">Settings</span>
+			</li> -->
+			<!-- <li class="profile">
+				<div class="profile-details">
+					<div class="name_job">
+						<div class="name">Logout</div>
+					</div>
+					<i class='bx bx-log-out' id="log_out"></i>
+				</div>
+			</li> -->
+		</ul>
+	</div>
+	<div class="container">
+
+		<h3 class="title"> Monitor</h3>
+	 
+		<div class="products-container">
+	 
+		   <div class="product" data-name="p-1">
+			  <img src="media/monitor-1.png" alt="">
+			  <h3>ASUS ROG</h3>
+			  <div class="price">₱8,000</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-2">
+			  <img src="media/monitor-2.png" alt="">
+			  <h3>Gamdias Atlas</h3>
+			  <div class="price">₱7,500</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-3">
+			  <img src="media/monitor-3.png" alt="">
+			  <h3>tomatoes</h3>
+			  <div class="price">₱6,800</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-4">
+			  <img src="media/monitor-4.png" alt="">
+			  <h3>Viewplus MH-276 27″</h3>
+			  <div class="price">₱9,000</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-5">
+			  <img src="media/monitor-5.png" alt="">
+			  <h3>PHILIPS 271V8</h3>
+			  <div class="price">₱6,000</div>
+		   </div>
+	 
+		   <div class="product" data-name="p-6">
+			  <img src="media/monitor-6.png" alt="">
+			  <h3>Samsung 24 Curved Screen Gaming Monitor</h3>
+			  <div class="price">₱7,500</div>
+		   </div>
+
+           <div class="product" data-name="p-7">
+            <img src="media/monitor-7.png" alt="">
+            <h3>LG 27” UltraFine™</h3>
+            <div class="price">₱5,500</div>
+         </div>
+
+         <div class="product" data-name="p-8">
+            <img src="media/monitor-8.png" alt="">
+            <h3>Misura Office monitor 24"</h3>
+            <div class="price">₱6,500</div>
+         </div>
+
+         <div class="product" data-name="p-9">
+            <img src="media/monitor-9.png" alt="">
+            <h3>EASE</h3>
+            <div class="price">₱8,500</div>
+         </div>
+         
+         <div class="product" data-name="p-10">
+            <img src="media/monitor-10.png" alt="">
+            <h3>JVC 23.8 FULL HD IPS MONITOR</h3>
+            <div class="price">₱8,000</div>
+         </div>
+
+		</div>
+	 
+	 </div>
+	 
+	 <div class="products-preview">
+	 
+		<div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-1.png" alt="">
+            <h3>ASUS ROG</h3>
+            <p>Model: PG32UQX<br>
+               Color: Black<br>
+               Refresh Rate: 144 Hz<br>
+               Brightness: 1400 Nits<br>
+               Aspect Ratio: 16:9
+            </p>
+            <div class="price">₱8,000</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('ASUS ROG', 8000, 'media/monitor-1.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-2.png" alt="">
+            <h3>Gamdias Atlas</h3>
+            <p>Size: 24"<br>
+               Resolution: 1920x1080<br>
+               Ratio: 16:9<br>
+               Response Time: 1ms with Overdrive<br>
+               Refresh Rate: 75Hz
+            </p>
+            <div class="price">₱7,500</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('Gamdias Atlas', 7500, 'media/monitor-2.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-3.png" alt="">
+            <h3>HP Omen 25</h3>
+            <p>Display size (diagonal): 24.5"<br>
+               Panel technology: TN w/LED backlight<br>
+               Aspect ratio: 16:9<br>
+               Native resolution: FHD (1920 x 1080)<br>
+               Pixel pitch: 0.283 mm
+            </p>
+            <div class="price">₱6,800</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('HP Omen 25', 6800, 'media/monitor-3.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-4.png" alt="">
+            <h3>Viewplus MH-276 27″</h3>
+            <p>Panel Type: IPS Frameless<br>
+               Display Size: 27″ Diagonal LED-Backlight<br>
+               Resolution: 1920x1080<br>
+               Refresh Rate: 75Hz<br>
+               Response Time: 5ms
+            </p>
+            <div class="price">₱9,000</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('Viewplus MH-276 27″', 9000, 'media/monitor-4.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-5.png" alt="">
+            <h3>PHILIPS 271V8</h3>
+            <p>Panel Size: 23.8 inch / 60.5 cm<br>
+               Aspect ratio: 16:9<br>
+               LCD panel type: IPS technology<br>
+               Backlight type: W-LED system
+            </p>
+            <div class="price">₱6,000</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('PHILIPS 271V8', 6000, 'media/monitor-5.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-6.png" alt="">
+            <h3>Samsung 24 Curved Screen Gaming Monitor</h3>
+            <p>Curved Screen<br>
+               Screen Size: 24"<br>
+               Color: Black<br>
+               Resolution: 1920 x 1080<br>
+               Response Time: 4 ms (GTG)
+            </p>
+            <div class="price">₱7,500</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('Samsung 24 Curved Screen Gaming Monitor', 7500, 'media/monitor-6.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-7">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-7.png" alt="">
+            <h3>LG 27” UltraFine</h3>
+            <p>Screen Size: 27"<br>
+               Panel Type: IPS<br>
+               Color Gamut (Typ.): DCI-P3 99% (CIE1976)<br>
+               Color Depth (Number of Colors): 1.07B<br>
+               Pixel Pitch (mm): 0.11685 x 0.11685 mm<br>
+               Response Time (GTG): 14ms (GtG, Not Support OD)
+            </p>
+            <div class="price">₱5,500</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('LG 27” UltraFine', 5500, 'media/monitor-7.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-8">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-8.png" alt="">
+            <h3>Misura Office monitor 24"</h3>
+            <p>Model: P23QM24DFI01B – 75 Hz<br>
+               Size: 24″<br>
+               Panel Type: 24" LED Backlight Monitor<br>
+               Pixel Pitch: 0.2745 (H) × 0.2745 (V) mm
+            </p>
+            <div class="price">₱6,500</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('Misura Office monitor 24', 6500, 'media/monitor-8.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-9">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-9.png" alt="">
+            <h3>EASE</h3>
+            <p>Model: G24I18<br>
+               Panel Size: 24″<br>
+               Panel Type: IPS<br>
+               Max. Resolution: 1920×1080
+            </p>
+            <div class="price">₱8,500</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('EASE', 8500, 'media/monitor-9.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="preview" data-target="p-10">
+            <i class="fas fa-times"></i>
+            <img src="media/monitor-10.png" alt="">
+            <h3>JVC 23.8 FULL HD IPS MONITOR</h3>
+            <p>IPS (In-Plane Switching) Display<br>
+               Built-in Speakers: 2x 8W<br>
+               Full High Definition display: 1920 x 1080<br>
+               75Hz Refresh Rate
+            </p>
+            <div class="price">₱8,000</div>
+            <div class="buttons">
+                <a href="#" class="cart" onclick="addToCart('JVC 23.8 FULL HD IPS MONITOR', 8000, 'media/monitor-10.png')">Add to Cart</a>
+            </div>
+        </div>
+        
+         </div>
+
+      
+
+
+         <script>
+            let sidebar = document.querySelector(".sidebar");
+            let closeBtn = document.querySelector("#btn");
+            let orderLink = document.getElementById("order-link");
+            let orderOptions = document.querySelector(".order-options");
+    
+            closeBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("open");
+                menuBtnChange();
+            });
+    
+            orderLink.addEventListener("click", (event) => {
+                event.preventDefault(); 
+                orderOptions.style.display = orderOptions.style.display === "none" ? "block" : "none";
+            });
+    
+            function menuBtnChange() {
+                if (sidebar.classList.contains("open")) {
+                    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+                } else {
+                    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+                }
+            }
+    
+            const checkboxes = document.querySelectorAll('.checkbox-option');
+    
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    const text = checkbox.dataset.text;
+                    if (checkbox.checked) {
+                        console.log(text + " checked");
+                    } else {
+                        console.log(text + " unchecked");
+                    }
+                });
+            });
+            //
+            function addToCart(productName, price, image) {
+        const product = {
+            name: productName,
+            price: price,
+            image: image
+        };
+    
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        const existingProductIndex = cart.findIndex(item => item.name === product.name);
+    
+        if (existingProductIndex > -1) {
+
+            cart[existingProductIndex].quantity += 1; 
+        } else {
+    
+            product.quantity = 1; 
+            cart.push(product);
+        }
+    
+     
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+    
+        alert(`${product.name} has been added to your cart.`);
+    }
+    </script>
+</body>
+</html>

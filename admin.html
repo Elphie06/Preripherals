@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Accounts</title>
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Account Management</h1>
+
+        <!-- Add/Edit Account Form -->
+        <form id="account-form">
+            <h2 id="form-title">Add Account</h2>
+            <input type="hidden" id="account-id">
+            
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Save</button>
+        </form>
+
+        <!-- Account List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="account-list">
+                <!-- Accounts will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="adminjs.js"></script>
+</body>
+</html>

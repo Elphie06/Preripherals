@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cart Page</title>
+   <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+   <h1>Your Cart</h1>
+   <div id="cart-items"></div>
+   <div id="cart-total"></div> <!-- Add this div for displaying the total -->
+   <button onclick="clearCart()">Clear Cart</button>
+   <button><a href="accountProductList.html">Continue Shopping</a></button>
+   <button><a href="checkout.html">Checkout</a></button>
+   </div>
+
+   <script>
+      function displayCart() {
+         const cart = JSON.parse(localStorage.getItem('cart')) || [];
+         const cartItemsDiv = document.getElementById('cart-items');
+         const cartTotalDiv = document.getElementById('cart-total');
+         cartItemsDiv.innerHTML = ''; 
+         let total = 0;
+
+         if (cart.length === 0) {
+            cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+            cartTotalDiv.innerHTML = ''; // Clear total when cart is empty
+         } else {
+            cart.forEach(item => {
+               total += item.price; // Add each item's price to the total
+               
+               const itemDiv = document.createElement('div');
+               itemDiv.innerHTML = `
+                  <img src="${item.image}" alt="${item.name}" width="50">
+                  <h3>${item.name}</h3>
+                  <div class="price">₱${item.price.toFixed(2)}</div>
+               `;
+               cartItemsDiv.appendChild(itemDiv);
+            });
+
+            cartTotalDiv.innerHTML = `<h2>Total: ₱${total.toFixed(2)}</h2>`; // Display total price
+         }
+      }
+
+      function clearCart() {
+         localStorage.removeItem('cart');
+         displayCart(); 
+      }
+
+      displayCart();
+   </script>
+</body>
+</html>

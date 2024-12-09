@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="accStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preripherals - Account</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="backbut-01.png"></a>
+    </nav>
+    <div class="loginBod">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="register.php" method="post">
+                    <h1 class="signup">Create Account</h1>
+                    <input type="text" placeholder="First Name" name="firstName"/>
+                    <input type="text" placeholder="Last Name" name="lastName"/>
+                    <input type="text" placeholder="User Name" name="userName"/>
+                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="text" placeholder="Gender" name="gender"/>
+                    <input type="password" placeholder="Password" name="password" />
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form id="admin-login-form" action="login.php" method="POST">
+                    <h1 class="sign">Sign in</h1>
+                    <input type="text" placeholder="User Name" id="username" name="userName" required />
+                    <input type="password" placeholder="Password" id="password" name="password" required />
+                    <p id="login-message" style="color: red;"></p>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="signup">Welcome Back Bossing!</h1>
+                        <p>Already have an Account?</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="signup">Sign-Up Now!</h1>
+                        <p>Don't Have an Account?</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const adminUsername = "admin"; // Set your admin username
+        const adminPassword = "password123"; // Set your admin password
+
+        document.getElementById('admin-login-form').addEventListener('submit', function(event) {
+            // Prevent form submission temporarily to check credentials
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const message = document.getElementById('login-message');
+
+            // Check if the credentials are for the admin
+            if (username === adminUsername && password === adminPassword) {
+                event.preventDefault(); // Prevent form from submitting to login.php
+                message.textContent = ""; // Clear any previous error message
+                window.location.href = 'index.php'; // Redirect to the admin page
+            } else {
+                // Allow form to be submitted to `login.php` for regular sign-in
+                message.textContent = ""; // Clear any previous error message
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
